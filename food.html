@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+<div id="container">
+
+<head>
+<mate charset="UTF-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>FOOD</title>
+<link href="food.css" rel="stylesheet">
+
+
+<script type="text/javascript">
+
+function preloadImages() {
+	imageCache = new Image();
+	imageCache.src = "images/syougatu2.jpg";
+	imageCache.src = "images/ke-ki2.jpg";
+	imageCache.src = "images/.jpg";
+	imageCache.src = "images/.jpg";
+}
+
+function changeImages(id,src) {
+	document.getElementById(id).src = src;
+}
+
+onload=preloadImages;
+
+</script>
+
+</head>
+
+
+<body>
+
+<header>
+
+<h1>ダックスとの暮らし</h1>
+
+</header>
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">HOME</a></li>
+
+<li><a href="food.html">FOOD</a></li>
+
+<li><a href="walk.html">WALK</a></li>
+
+<li><a href="care.html">CARE</a></li>
+
+<li><a href="photo.html">PHOTO</a></li>
+
+</ul>
+
+</nav>
+
+
+<ul>
+
+<li><h2>イベント</h2></li>
+
+<dl>
+
+<dt><h3 class="ibento">お正月</h3></dt>
+
+	<dd>お正月は犬用のおせちをあげます。市販のものと手作りのものをお重に入れました。</dd>
+
+</dl>
+
+<div id="page">
+
+<p class="image">
+<img src="images/syougatu.jpg" width="150" height="200" alt="rollover" id="syougatu"
+	onmouseover="changeImages('syougatu', 'images/syougatu2.jpg'); return true;"
+	onmouseout="changeImages('syougatu', 'images/syougatu.jpg'); return true;" />
+</p>
+</div>
+
+<dl>
+
+<dt><h3>お誕生日</h3></dt>
+
+	<dd>お誕生日には手作りのケーキをあげます。</dd>
+
+</dl>
+
+<div id="page">
+
+<p class="image">
+<img src="images/ke-ki.jpg" width="150" height="200" alt="rollover" id="ke-ki"
+	onmouseover="changeImages('ke-ki', 'images/ke-ki2.jpg'); return true;"
+	onmouseout="changeImages('ke-ki', 'images/ke-ki.jpg'); return true;" />
+</p>
+</div>
+
+<dl>
+
+<dt><h3>クリスマス</h3></dt>
+
+	<dd>クリスマスはハンバーグとケーキをあげました。</dd>
+
+</dl>
+
+<div id="page">
+
+<p class="image">
+<img src="images/gohan.jpg" width="150" height="200" alt="rollover" id="gohan"
+	onmouseover="changeImages('gohan', 'images/gohan2.jpg'); return true;"
+	onmouseout="changeImages('gohan', 'images/gohan.jpg'); return true;" />
+</p>
+</div>
+
+</dl>
+
+<div id="page">
+
+<p class="image">
+<img src="images/santa.jpg" width="150" height="200" alt="rollover" id="santa"
+	onmouseover="changeImages('santa', 'images/santa2.jpg'); return true;"
+	onmouseout="changeImages('santa', 'images/santa.jpg'); return true;" />
+</p>
+</div>
+
+
+<li><h2>ページ紹介</h2></li>
+
+<dl>
+
+<dt><h3>FOOD</h3></dt>
+
+	<dd><p>記念日やイベントのある時期に特別に作っているドックフード以外のメニューを作り方から紹介するページです。<br />また、具合の悪い時や食欲がないときに役立つおかゆの作り方も紹介しています。</p></dd>
+
+
+<dt><h3>WALK</h3></dt>
+
+	<dd><p>お散歩にぴったりなスポットを紹介します。お手軽な場所はもちろん、旅行にぴったりな場所も...。</p></dd>
+
+
+<dt><h3>CARE</h3></dt>
+
+	<dd><p>お家でできるワンちゃんのお手入れを紹介します。お店で頼むとお金がかかるシャンプーもお家でやってみましょう！<br />ワンちゃんはきれいになって、節約もできて一石二鳥です。</p></dd>
+
+
+<dt><h3>PHOTO</h3></dt>
+
+	<dd><p>我が家のダックスの写真を、季節に分けて紹介します。イベントごとにコスプレさせてます。</p></dd>
+
+</dl>
+
+</ul>
+
+
+</body>
+</html>
