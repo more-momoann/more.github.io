@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
+<div id="container">
+
+<head>
+<mate charset="UTF-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>ダックスとの暮らし</title>
+<link href="index.css" rel="stylesheet">
+
+<script type="text/javascript">
+		function preloadImages() {
+			imageCache = new Image();
+			imageCache.src = "photo/momo tuno.jpg";
+			imageCache.src = "photo/momo onaka.jpg";
+			imageCache.src = "photo/momo yoko.jpg";
+
+			imageCache.src = "photo/ann.jpg";
+			imageCache.src = "photo/ann mori.jpg";
+			imageCache.src = "photo/ann huton.jpg";
+		}
+		function changeImages(id,src) {
+			document.getElementById(id).src = src;
+		}
+		onload=preloadImages;
+	</script>
+
+</head>
+
+
+<body>
+
+<header>
+
+<h1>ダックスとの暮らし</h1>
+
+</header>
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">HOME</a></li>
+
+<li><a href="food.html">FOOD</a></li>
+
+<li><a href="walk.html">WALK</a></li>
+
+<li><a href="care.html">CARE</a></li>
+
+<li><a href="photo.html">PHOTO</a></li>
+
+</ul>
+
+</nav>
+
+<div id="flashContent">
+			<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="1000" height="500" id="douga" align="middle">
+				<param name="movie" value="douga.swf" />
+				<param name="quality" value="high" />
+				<param name="bgcolor" value="#ffffff" />
+				<param name="play" value="true" />
+				<param name="loop" value="true" />
+				<param name="wmode" value="window" />
+				<param name="scale" value="showall" />
+				<param name="menu" value="true" />
+				<param name="devicefont" value="false" />
+				<param name="salign" value="" />
+				<param name="allowScriptAccess" value="sameDomain" />
+				<!--[if !IE]>-->
+				<object type="application/x-shockwave-flash" data="douga.swf" width="1000" height="500">
+					<param name="movie" value="douga.swf" />
+					<param name="quality" value="high" />
+					<param name="bgcolor" value="#ffffff" />
+					<param name="play" value="true" />
+					<param name="loop" value="true" />
+					<param name="wmode" value="window" />
+					<param name="scale" value="showall" />
+					<param name="menu" value="true" />
+					<param name="devicefont" value="false" />
+					<param name="salign" value="" />
+					<param name="allowScriptAccess" value="sameDomain" />
+				<!--<![endif]-->
+					<a href="http://www.adobe.com/go/getflash">
+						<img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Adobe Flash Player を取得" />
+					</a>
+				<!--[if !IE]>-->
+				</object>
+				<!--<![endif]-->
+			</object>
+		</div>
+
+<ul>
+
+<li><h2>ダックス紹介</h2></li>
+
+<dl>
+
+<dt><h3 class="momo">もも</h3></dt>
+
+	<dd>イエローの女の子です。とってものんびり屋で、マイペース。</dd>
+
+</dl>
+
+	
+<div id="page1">
+		<div class="photobox">
+			<p><img id="momo tuno"src="photo/momo tuno.jpg" width="200" height="266" alt="rollover" /></p>
+			<ul>
+				<li>
+					<img src="images/momo tuno2.jpg" width="66" height="88" alt="momo tuno"
+						onmouseover="changeImages('momo tuno', 'photo/momo tuno.jpg'); return true;">
+				</li>
+				<li>
+					<img src="images/momo onaka2.jpg" width="66" height="88" alt="A340-300"
+						onmouseover="changeImages('momo tuno', 'photo/momo onaka.jpg'); return true;">
+				</li>
+				<li>
+					<img src="images/momo yoko2.jpg" width="66" height="88" alt="B767-400ER"
+						onmouseover="changeImages('momo tuno', 'photo/momo yoko.jpg'); return true;">
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+
+<dl>
+
+<dt><h3 class="ann">あん</h3></dt>
+
+	<dd>ブラックタンの女の子です。とっても活発だけど、内弁慶。</dd>
+
+</dl>
+
+<div id="page2">
+		<div class="photobox">
+			<p><img id="ann mori"src="photo/ann mori.jpg" width="200" height="266" alt="rollover" /></p>
+			<ul>
+				<li>
+					<img src="images/ann mori2.jpg" width="66" height="88" alt="momo tuno"
+						onmouseover="changeImages('ann mori', 'photo/ann mori.jpg'); return true;">
+				</li>
+				<li>
+					<img src="images/ann2.jpg" width="66" height="88" alt="A340-300"
+						onmouseover="changeImages('ann mori', 'photo/ann.jpg'); return true;">
+				</li>
+				<li>
+					<img src="images/ann huton2.jpg" width="66" height="88" alt="B767-400ER"
+						onmouseover="changeImages('ann mori', 'photo/ann huton.jpg'); return true;">
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+
+<li><h2>ページ紹介</h2></li>
+
+<dl>
+
+<dt><h3>FOOD</h3></dt>
+
+	<dd><p>記念日やイベントのある時期に特別に作っているドックフード以外のメニューを作り方から紹介するページです。<br />また、具合の悪い時や食欲がないときに役立つおかゆの作り方も紹介しています。</p></dd>
+
+
+<dt><h3>WALK</h3></dt>
+
+	<dd><p>お散歩にぴったりなスポットを紹介します。お手軽な場所はもちろん、旅行にぴったりな場所も...。</p></dd>
+
+
+<dt><h3>CARE</h3></dt>
+
+	<dd><p>お家でできるワンちゃんのお手入れを紹介します。お店で頼むとお金がかかるシャンプーもお家でやってみましょう！<br />ワンちゃんはきれいになって、節約もできて一石二鳥です。</p></dd>
+
+
+<dt><h3>PHOTO</h3></dt>
+
+	<dd><p>我が家のダックスの写真を、季節に分けて紹介します。イベントごとにコスプレさせてます。</p></dd>
+
+</dl>
+
+</ul>
+
+</body>
+</html>
